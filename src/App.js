@@ -1,24 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
-
+import MovieCard from "./component/MovieCard"
+import MovieList from "./component/MovieList"
+import Filter from "./component/Filter"
+import React, { useState } from "react";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <MovieCard/>
+  <Filter/>
+ </div>
   );
 }
 
